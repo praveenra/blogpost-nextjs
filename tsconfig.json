@@ -28,9 +28,6 @@
       "@/lib/*": [
         "src/lib/*"
       ],
-      "@/modules/*": [
-        "src/modules/*"
-      ],
       "@/models/*": [
         "src/lib/models/*"
       ],
