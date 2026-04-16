@@ -1,7 +1,7 @@
 import { NextRequest } from 'next/server';
 import HealthController from '@/modules/health/controllers/HealthController';
 
-// Handle CORS //
+// Handle CORS
 const headers = {
   'Access-Control-Allow-Origin': '*',
   'Access-Control-Allow-Methods': 'GET, OPTIONS',
