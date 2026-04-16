@@ -1,12 +1,5 @@
 import { NextResponse } from 'next/server';
 
-// Handle CORS
-const headers = {
-  'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Methods': 'GET, OPTIONS',
-  'Access-Control-Allow-Headers': 'Content-Type',
-};
-
 export async function GET() {
   return NextResponse.json(
     {
@@ -14,10 +7,6 @@ export async function GET() {
       message: 'API is working!',
       timestamp: new Date().toISOString(),
     },
-    { status: 200, headers }
+    { status: 200 }
   );
-}
-
-export async function OPTIONS() {
-  return new Response(null, { headers, status: 200 });
 }
